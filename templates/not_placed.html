@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not Placed ❌</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #ff6a6a, #d32f2f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: white;
+      color: #d32f2f;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>❌ Not Placed</h1>
+    <p>Don’t worry, keep improving your skills and try again 💪</p>
+    <a href="{{ url_for('home') }}" class="btn">Try Again</a>
+  </div>
+</body>
+</html>
